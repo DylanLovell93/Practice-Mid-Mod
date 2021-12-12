@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import './Items.css';
 import Item from './Item.js';
+import productData from '../data/productData.js';
 
 class Items extends Component {
   constructor() {
@@ -10,8 +11,9 @@ class Items extends Component {
   render() {
     return (
       <div className="Items">
-        Items
-        <Item />
+        {productData.map((product) => {
+          return <Item product={product} addToCart={this.props.addToCart} />;
+        })}
       </div>
     );
   }

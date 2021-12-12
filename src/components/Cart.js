@@ -4,6 +4,9 @@ import './Cart.css';
 class Cart extends Component {
   constructor() {
     super();
+    this.state = {
+      cart: [],
+    };
   }
 
   render() {

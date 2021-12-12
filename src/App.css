@@ -1,2 +1,5 @@
 .App {
+  display: grid;
+  grid-template-columns: 3.5fr 2.5fr;
+  grid-template-rows: 1fr 3fr;
 }
