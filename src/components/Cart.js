@@ -4,13 +4,20 @@ import './Cart.css';
 class Cart extends Component {
   constructor() {
     super();
-    this.state = {
-      cart: [],
-    };
   }
 
   render() {
-    return <div className="Cart">Cart</div>;
+    const { cart } = this.props;
+    return (
+      <div className="Cart">
+        <h2>Cart</h2>
+        <ul>
+          {cart.map((item) => {
+            return <li>{item.name + ': ' + item.price}</li>;
+          })}
+        </ul>
+      </div>
+    );
   }
 }
 

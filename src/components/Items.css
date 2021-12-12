@@ -2,4 +2,12 @@
   background-color: navy;
   grid-area: 1 / 1 / span 2 / span 1;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.Items .title {
+  background-color: green;
+  grid-area: 1 / 1 / span 1 / span 2;
 }

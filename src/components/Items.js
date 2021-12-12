@@ -11,6 +11,10 @@ class Items extends Component {
   render() {
     return (
       <div className="Items">
+        <div className="title">
+          {' '}
+          <h1>My Garage Sale</h1>
+        </div>
         {productData.map((product) => {
           return <Item product={product} addToCart={this.props.addToCart} />;
         })}
