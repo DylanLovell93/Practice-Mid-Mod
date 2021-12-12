@@ -1,7 +1,16 @@
-import "./App.css";
+import './App.css';
+import Checkout from './components/Checkout.js';
+import Cart from './components/Cart.js';
+import Items from './components/Items.js';
 
 const App = () => {
-  return <h1>Hello, world!</h1>;
+  return (
+    <div className="App">
+      <Items />
+      <Cart />
+      <Checkout />
+    </div>
+  );
 };
 
 export default App;
